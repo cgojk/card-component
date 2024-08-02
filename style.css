@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+:root{
+
+
+
+--Dark-cyan: hsl(158, 36%, 37%);
+--dark-cyan-hover:hsl(156,32%,28%);
+--Cream: hsl(30, 38%, 92%);
+
+/* Neutral */
+
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+
+
+}
+body{
+    font-family:'Montserrat','sans-serif';
+    line-height:1.6;
+    background-color: var(--Cream);
+  
+
+}
+.container{
+    max-width:600px;
+    background-color: white;
+    margin:300px auto;
+    display:flex;
+    border-radius: 10px;
+
+
+}
+.image{
+    display:flex;
+    width:50%;
+
+}
+img{
+    max-width:100%;
+   
+}
+h2{
+    font-family: 'Montserrat';
+    text-transform:uppercase;
+    letter-spacing:  0.2em;
+    font-size:.8em;
+    font-weight:400;
+    
+}
+
+h1{
+    font-size:1.5rem;
+    color:#000;
+    font-family:'fraunces',serif;
+    font-weight:700;
+    line-height:1;
+
+}
+
+p{
+    font-size:.8rem;
+    font-weight:400;
+
+}
+span.new-price{
+    color:var(--Dark-cyan);
+    font-size:1.6rem;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+
+
+}
+span.old-price{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration:line-through;
+    font-size:.8rem;
+    align-self:center;
+
+
+}
+a{
+    padding:1em;
+    background-color:var(--Dark-cyan);
+    color:white;
+    text-decoration: none;
+    font-size:.7rem;
+    border-radius:10px;
+    display:flex;
+    /* align-items: center; */
+    font-weight:bold;
+    /* margin:auto; */
+   justify-content:center;
+    align-items:center;
+    gap:1em;
+   
+
+
+
+}
+
+
+
+a i{
+    color:white;
+    align-self:center;
+
+
+
+
+}
+.price{
+    display:flex;
+   
+    gap:1em;
+
+}
+
+a:hover{
+    border:1px solid var(--Dark-cyan);
+    background-color:var(--dark-cyan-hover);
+    color:white;
+ 
+    
+}
+
+
+.description{
+    display:flex;
+    flex-direction:column;
+    gap:2em;
+    padding: 2em;
+    border-radius:15px;
+    width:50%;
+   
+
+}
+
+
+
+/* media queries */
+
+@media(max-width:576px){
+    .container{
+        flex-direction:column;
+        padding:1em;
+        margin:50px auto;
+        max-width:400px;
+
+    }
+  .image{
+    width:100%;
+    
+  }
+  
+ 
+    .description{
+        width:100%;
+    }
+}
